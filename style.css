@@ -1,0 +1,548 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    line-height: 1.6;
+    background: #fffaf7;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background: #46f0ea;
+    border-bottom: 1px solid #0abbb5;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #c59d5f;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+header nav a:hover {
+    color: #c59d5f;
+}
+
+/* Hero */
+.hero {
+    background: #18120a;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    margin: auto;
+    background: rgba(24, 18, 10, 0.55);
+    padding: 48px 32px 36px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-highlight {
+    color: #c59d5f;
+    font-weight: 700;
+    font-size: 1.3em;
+    display: block;
+    margin-top: 6px;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+    color: #fffbe6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    color: white;
+    background: #c59d5f;
+    margin: 10px 0;
+}
+
+.btn:focus, .catalogo-card:focus, a:focus {
+    outline: 2px solid #c59d5f;
+    outline-offset: 2px;
+}
+
+.btn-destaque {
+    background: linear-gradient(90deg, #c59d5f 60%, #e7cfa3 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(197,157,95,0.13);
+    padding: 14px 32px;
+}
+
+.btn-destaque:hover, .btn-destaque:focus {
+    background: linear-gradient(90deg, #b38a4d 60%, #c59d5f 100%);
+    color: #fffbe6;
+    transform: scale(1.04);
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+    border: 2px solid #25d366;
+    font-weight: 600;
+    padding: 14px 32px;
+    transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
+}
+
+.btn-whatsapp:hover, .btn-whatsapp:focus {
+    background: #fff;
+    color: #25d366;
+    border-color: #25d366;
+    transform: scale(1.04);
+}
+
+.hero-selo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #fffbe6;
+    color: #c59d5f;
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 auto;
+    width: fit-content;
+    box-shadow: 0 2px 8px rgba(197,157,95,0.08);
+}
+
+.hero-selo svg {
+    flex-shrink: 0;
+}
+
+/* Seções principais */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #c7bfb4;
+}
+
+/* Diferenciais */
+.diferenciais .container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.diferencial {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 25px 20px;
+    max-width: 260px;
+    text-align: center;
+    flex: 1 1 220px;
+    margin: 10px 0;
+}
+
+.diferencial .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: #c59d5f;
+}
+
+.diferencial h4 {
+    color: #c59d5f;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.diferencial p {
+    color: #555;
+    font-size: 0.98rem;
+}
+
+/* Destaques */
+.destaques {
+    background: #fffaf7;
+    padding: 50px 0 30px 0;
+}
+
+.destaques .destaques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.produto-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 18px 14px 22px 14px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.produto-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 18px rgba(197,157,95,0.13);
+}
+
+.produto-card img {
+    width: 100%;
+    max-width: 170px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.selo-promocao {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #eea500;
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.preco {
+    color: #c59d5f;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.preco-antigo {
+    color: #aaa;
+    font-size: 0.95rem;
+    text-decoration: line-through;
+    margin-right: 6px;
+}
+
+.condicoes {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.produto-card .btn {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+
+/* Newsletter */
+.newsletter {
+    background: #fff5ec;
+    padding: 40px 0 30px 0;
+    text-align: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c59d5f;
+    width: 220px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    padding: 10px 22px;
+    border-radius: 5px;
+    border: none;
+    background: #c59d5f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.newsletter button:hover {
+    background: #b38a4d;
+}
+
+/* Depoimentos */
+.testemunhos {
+    background: #fff5ec;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testemunhos h3 {
+    color: #c59d5f;
+    margin-bottom: 30px;
+}
+
+.testemunho-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testemunho {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 25px 20px;
+    max-width: 320px;
+    font-style: italic;
+    color: #555;
+}
+
+.testemunho strong {
+    display: block;
+    margin-top: 15px;
+    color: #c59d5f;
+    font-style: normal;
+}
+
+.estrelas svg {
+    width: 17px;
+    height: 17px;
+    fill: #eea500;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+/* Catálogos */
+.catalogo-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin-top: 20px;
+}
+
+.catalogo-card {
+    background: #f9f2ec;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #c59d5f;
+    transition: transform 0.2s;
+}
+
+.catalogo-card:hover {
+    transform: scale(1.05);
+    background: #c2b3a5;
+}
+
+/* Contato */
+.contato-links a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #c59d5f;
+    transition: text-decoration 0.2s;
+}
+
+.contato-links a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background: #0abbb5;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Botão WhatsApp flutuante */
+.fab-whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 2rem;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.fab-whatsapp:hover {
+    background: #b38a4d;
+    transform: scale(1.08);
+}
+
+/* Ícones sociais */
+.social-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 6px;
+    fill: currentColor;
+}
+
+/* Animação fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    transition: opacity 0.9s cubic-bezier(.4,0,.2,1), transform 0.9s cubic-bezier(.4,0,.2,1);
+    will-change: opacity, transform;
+}
+
+.fade-in.revealed {
+    opacity: 1;
+    transform: none;
+}
+
+/* Responsividade */
+@media (min-width: 500px) {
+    .hero-buttons {
+        flex-direction: row;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .diferenciais .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .destaques .destaques-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-content {
+        padding: 24px 8px 20px 8px;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        padding: 20px;
+    }
+    .container {
+        width: 98%;
+        padding: 10px 0;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+    .testemunho-lista {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .fab-whatsapp {
+        right: 10px;
+        bottom: 10px;
+        width: 46px;
+        height: 46px;
+        font-size: 1.5rem;
+    }
+    .destaques .destaques-grid {
+        grid-template-columns: 1fr;
+    }
+    .newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .newsletter button {
+        width: 100%;
+    }
+}

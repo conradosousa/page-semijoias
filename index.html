@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brilho Único - Semijoias</title>
+    <meta name="description"
+        content="Semijoias de alta qualidade para revenda e uso pessoal. Brilhe todos os dias com a Brilho Único.">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Brilho Único</h1>
+            <nav aria-label="Navegação principal">
+                <a href="#catalogos">Catálogos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero fade-in">
+            <div class="hero-content">
+                <img src="imagens/arranjo-estetico-de-brincos-dourados.jpg" alt="Semijoias de luxo" class="hero-img" />
+                <h2>Brilhe todos os dias<br><span class="hero-highlight">com exclusividade e elegância</span></h2>
+                <p class="hero-subtitle">Semijoias selecionadas para mulheres que amam se destacar.</p>
+                <div class="hero-buttons">
+
+                </div>
+                <div class="hero-selo" aria-label="2 anos de garantia">
+                    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+                        <path fill="#c59d5f"
+                            d="M16 3l4.944 10.018L32 14.625l-8 7.798 1.889 11.011L16 27.235l-9.889 5.199L8 22.423 0 14.625l11.056-1.607z" />
+                    </svg>
+                    <span>2 anos de garantia</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre fade-in">
+            <div class="container">
+                <h3>Sobre a nossa marca</h3>
+                <p>Trabalhamos com semijoias de alta qualidade para revenda e uso pessoal. Nossos produtos têm garantia
+                    e design exclusivo, feitos para mulheres que querem brilhar todos os dias.</p>
+            </div>
+        </section>
+
+        <section class="diferenciais fade-in">
+            <div class="container">
+                <div class="diferencial">
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                        <path
+                            d="M16 3l4.944 10.018L32 14.625l-8 7.798 1.889 11.011L16 27.235l-9.889 5.199L8 22.423 0 14.625l11.056-1.607z" />
+                    </svg>
+                    <h4>2 anos de garantia</h4>
+                    <p>Peças hipoalergênicas e banho antialérgico</p>
+                </div>
+                <div class="diferencial">
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                        <circle cx="16" cy="16" r="14" stroke="#c59d5f" stroke-width="2" fill="none" />
+                        <path d="M10 16l4 4 8-8" stroke="#c59d5f" stroke-width="2" fill="none" />
+                    </svg>
+                    <h4>Até 6x sem juros</h4>
+                    <p>Ou 5% OFF no Pix</p>
+                </div>
+                <div class="diferencial">
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                        <path d="M4 8h24v16H4z" fill="#fff" stroke="#c59d5f" stroke-width="2" />
+                        <path d="M4 8l12 8 12-8" fill="none" stroke="#c59d5f" stroke-width="2" />
+                    </svg>
+                    <h4>Frete grátis</h4>
+                    <p>Acima de R$249</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destaques fade-in">
+            <div class="container">
+                <div class="destaques-grid">
+                    <div class="produto-card">
+                        <span class="selo-promocao">Promoção</span>
+                        <img src="imagens/arranjo-estetico-de-brincos-dourados.jpg" alt="Brincos dourados" />
+                        <div class="preco-antigo">R$ 199,90</div>
+                        <div class="preco">R$ 149,90</div>
+                        <div class="condicoes">3x de R$ 49,97 sem juros</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Brincos dourados','imagens/arranjo-estetico-de-brincos-dourados.jpg','R$ 199,90','R$ 149,90'); return false;">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <span class="selo-promocao">Promoção</span>
+                        <img src="imagens/mao-de-vista-lateral-usando-correntes-de-ouro.jpg" alt="Correntes de ouro" />
+                        <div class="preco-antigo">R$ 199,90</div>
+                        <div class="preco">R$ 149,90</div>
+                        <div class="condicoes">3x de R$ 49,97 sem juros</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Correntes de ouro','imagens/mao-de-vista-lateral-usando-correntes-de-ouro.jpg','R$ 199,90','R$ 149,90'); return false;">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <span class="selo-promocao">Promoção</span>
+                        <img src="imagens/modelo-mostra-brincos-e-anel-com-lindas-pedras-preciosas-azuis.jpg"
+                            alt="Brincos e anel com pedras azuis" />
+                        <div class="preco-antigo">R$ 199,90</div>
+                        <div class="preco">R$ 149,90</div>
+                        <div class="condicoes">3x de R$ 49,97 sem juros</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Brincos e anel com pedras azuis','imagens/modelo-mostra-brincos-e-anel-com-lindas-pedras-preciosas-azuis.jpg','R$ 199,90','R$ 149,90'); return false;">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter fade-in">
+            <h3>Receba novidades e promoções no WhatsApp</h3>
+            <form
+                onsubmit="if(this.whats.value){window.open('https://wa.me/seunumerowhatsapp?text=' + encodeURIComponent('Quero receber novidades e promoções! Meu WhatsApp: ' + this.whats.value),'_blank');} return false;">
+                <input type="tel" name="whats" placeholder="Seu WhatsApp com DDD" pattern="[0-9]{2}9[0-9]{8}" required
+                    aria-label="Seu WhatsApp" />
+                <button type="submit">Quero receber</button>
+            </form>
+        </section>
+
+        <section class="testemunhos fade-in">
+            <div class="container">
+                <h3>O que dizem nossas clientes</h3>
+                <div class="testemunho-lista">
+                    <div class="testemunho">
+                        <div class="estrelas" aria-label="5 estrelas">
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                        </div>
+                        <p>"Amei a qualidade das peças! Atendimento excelente."</p>
+                        <strong>— Juliana S.</strong>
+                    </div>
+                    <div class="testemunho">
+                        <div class="estrelas" aria-label="5 estrelas">
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                        </div>
+                        <p>"Comprei para revender e minhas clientes adoraram. Recomendo!"</p>
+                        <strong>— Camila R.</strong>
+                    </div>
+                    <div class="testemunho">
+                        <div class="estrelas" aria-label="5 estrelas">
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+                            </svg>
+                        </div>
+                        <p>"Entrega rápida e produtos lindos. Vou comprar de novo!"</p>
+                        <strong>— Fernanda M.</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogos" id="catalogos">
+            <div class="container">
+                <h3>Catálogo de Anéis</h3>
+                <div class="catalogo-grid">
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg" alt="Anel dourado com pedra verde" />
+                        <div class="preco-antigo">R$ 129,90</div>
+                        <div class="preco">R$ 99,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Anel dourado com pedra verde','imagens/anel-dourado-pedra-verde.jpg','R$ 129,90','R$ 99,90'); return false;">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg" alt="Anel rosé com zircônia" />
+                        <div class="preco-antigo">R$ 139,90</div>
+                        <div class="preco">R$ 109,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Anel rosé com zircônia','imagens/anel-rosé-zirconia.jpg','R$ 139,90','R$ 109,90'); return false;">Comprar</a>
+                    </div>
+                </div>
+                <h3>Catálogo de Colares</h3>
+                <div class="catalogo-grid">
+                    
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg"
+                            alt="Colar dourado com pingente de coração" />
+                        <div class="preco-antigo">R$ 119,90</div>
+                        <div class="preco">R$ 89,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Colar dourado com pingente de coração','imagens/colar-dourado-pingente-coracao.jpg','R$ 119,90','R$ 89,90'); return false;">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg"
+                            alt="Colar dourado com pingente de coração" />
+                        <div class="preco-antigo">R$ 119,90</div>
+                        <div class="preco">R$ 89,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Colar dourado com pingente de coração','imagens/colar-dourado-pingente-coracao.jpg','R$ 119,90','R$ 89,90'); return false;">Comprar</a>
+                    </div>
+
+                    
+                </div>
+                <h3>Catálogo de Pulseiras</h3>
+                <div class="catalogo-grid">
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg" alt="Pulseira dourada de elos" />
+                        <div class="preco-antigo">R$ 89,90</div>
+                        <div class="preco">R$ 59,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Pulseira dourada de elos','imagens/pulseira-dourada-elos.jpg','R$ 89,90','R$ 59,90'); return false;">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg" alt="Pulseira dourada de elos" />
+                        <div class="preco-antigo">R$ 89,90</div>
+                        <div class="preco">R$ 59,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Pulseira dourada de elos','imagens/pulseira-dourada-elos.jpg','R$ 89,90','R$ 59,90'); return false;">Comprar</a>
+                    </div>
+
+                </div>
+                <h3>Catálogo Completo</h3>
+                <div class="catalogo-grid">
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg" alt="Anel dourado com pedra verde" />
+                        <div class="preco-antigo">R$ 129,90</div>
+                        <div class="preco">R$ 99,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Anel dourado com pedra verde','imagens/anel-dourado-pedra-verde.jpg','R$ 129,90','R$ 99,90'); return false;">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg"
+                            alt="Colar dourado com pingente de coração" />
+                        <div class="preco-antigo">R$ 119,90</div>
+                        <div class="preco">R$ 89,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Colar dourado com pingente de coração','imagens/colar-dourado-pingente-coracao.jpg','R$ 119,90','R$ 89,90'); return false;">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="imagens/wedding-rings-4715281_1280.jpg" alt="Pulseira dourada de elos" />
+                        <div class="preco-antigo">R$ 89,90</div>
+                        <div class="preco">R$ 59,90</div>
+                        <a href="#" class="btn btn-whatsapp"
+                            onclick="enviarWhatsAppProduto('Pulseira dourada de elos','imagens/pulseira-dourada-elos.jpg','R$ 89,90','R$ 59,90'); return false;">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="container"> 
+                <h3>Entre em contato</h3>
+                <div class="contato-links">
+                    <a href="https://wa.me/seunumerowhatsapp" target="_blank" rel="noopener noreferrer"
+                        aria-label="WhatsApp da Brilho Único">
+                        <svg class="social-icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.1 2.36 7.1L4 29l7.18-2.31C13.1 27.37 14.52 27.7 16 27.7c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22.7c-1.34 0-2.65-.26-3.87-.77l-.28-.12-4.26 1.37 1.39-4.14-.18-.29C6.87 19.01 6 17.06 6 15c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.18.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.36-.01-.56-.01-.2 0-.52.07-.8.36-.28.28-1.06 1.04-1.06 2.54 0 1.5 1.09 2.95 1.24 3.16.15.21 2.14 3.28 5.19 4.47.73.31 1.3.5 1.75.64.74.24 1.41.21 1.94.13.59-.09 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z" />
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <a href="https://instagram.com/seuinstagram" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram da Brilho Único">
+                        <svg class="social-icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M16 8.6A7.4 7.4 0 1 0 23.4 16 7.41 7.41 0 0 0 16 8.6zm0 12.2A4.8 4.8 0 1 1 20.8 16 4.81 4.81 0 0 1 16 20.8zm8.16-12.36a1.72 1.72 0 1 1-1.72-1.72 1.72 1.72 0 0 1 1.72 1.72zm4.88 1.75a5.06 5.06 0 0 0-1.38-3.58A5.06 5.06 0 0 0 24.08 4.7C22.09 4.01 16 4 16 4s-6.09 0-8.08.7A5.06 5.06 0 0 0 4.34 7.81 5.06 5.06 0 0 0 3 11.39C2.31 13.38 2.3 19.47 2.3 19.47s0 6.09.7 8.08a5.06 5.06 0 0 0 3.11 3.11c1.99.69 8.08.7 8.08.7s6.09 0 8.08-.7a5.06 5.06 0 0 0 3.11-3.11c.69-1.99.7-8.08.7-8.08s0-6.09-.7-8.08zM28.7 24.08a2.89 2.89 0 0 1-1.63 1.63c-1.13.45-3.81.7-7.07.7s-5.94-.25-7.07-.7a2.89 2.89 0 0 1-1.63-1.63c-.45-1.13-.7-3.81-.7-7.07s.25-5.94.7-7.07A2.89 2.89 0 0 1 6.93 6.93c1.13-.45 3.81-.7 7.07-.7s5.94.25 7.07.7a2.89 2.89 0 0 1 1.63 1.63c.45 1.13.7 3.81.7 7.07s-.25 5.94-.7 7.07z" />
+                        </svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brilho Único. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/seunumerowhatsapp" class="fab-whatsapp" target="_blank" rel="noopener noreferrer"
+        aria-label="Fale conosco pelo WhatsApp">
+        <svg viewBox="0 0 32 32" class="social-icon" aria-hidden="true">
+            <path
+                d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.1 2.36 7.1L4 29l7.18-2.31C13.1 27.37 14.52 27.7 16 27.7c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22.7c-1.34 0-2.65-.26-3.87-.77l-.28-.12-4.26 1.37 1.39-4.14-.18-.29C6.87 19.01 6 17.06 6 15c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.18.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.36-.01-.56-.01-.2 0-.52.07-.8.36-.28.28-1.06 1.04-1.06 2.54 0 1.5 1.09 2.95 1.24 3.16.15.21 2.14 3.28 5.19 4.47.73.31 1.3.5 1.75.64.74.24 1.41.21 1.94.13.59-.09 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z" />
+        </svg>
+    </a>
+
+    <script>
+        function enviarWhatsAppProduto(nome, foto, precoAntigo, precoAtual) {
+            var numero = '5585996966656';
+            var urlFoto = window.location.origin + '/' + foto;
+            var mensagem = `Olá! Tenho interesse neste produto:\n\n*Produto:* ${nome}\n*Valor sem desconto:* ${precoAntigo}\n*Valor promocional:* ${precoAtual}\n\nFoto: ${urlFoto}`;
+            window.open(`https://wa.me/${numero}?text=` + encodeURIComponent(mensagem), '_blank');
+        }
+
+        // Efeito de fade-in ao scrollar (premium: fade + slide-up)
+        function revealOnScroll() {
+            var elements = document.querySelectorAll('.fade-in');
+            var windowHeight = window.innerHeight;
+            elements.forEach(function(el) {
+                var position = el.getBoundingClientRect().top;
+                if (position < windowHeight - 80) {
+                    el.classList.add('revealed');
+                } else {
+                    el.classList.remove('revealed');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('DOMContentLoaded', function() {
+            revealOnScroll();
+        });
+    </script>
+</body>
+
+</html>
