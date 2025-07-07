@@ -160,6 +160,24 @@ header nav a:hover {
     background: #e6f7f7;
 }
 
+/* Faixa de revendedora autorizada */
+.header-autorized {
+    background: #fffbe6;
+    color: #b38a4d;
+    text-align: center;
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    padding: 6px 0 4px 0;
+    border-bottom: 1px solid #f2e6c6;
+}
+
+.header-autorized strong {
+    color: #c59d5f;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
 /* Hero */
 .hero {
     background: #18120a;
